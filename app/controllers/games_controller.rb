@@ -11,7 +11,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new
+    @game = Game.create
     render json: @game
   end
 
