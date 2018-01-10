@@ -1,17 +1,21 @@
 class GamesController < ApplicationController
   def index
-    render root
+    @games = Game.all
+    render @games
   end
 
   def show
-    render root
+    @game = Game.find(params["id"])
+    render @game
   end
 
   def create
-    render root
+    @game = Game.new
+    render @game
   end
 
   def update
-    render root
+    @game = Game.find(params["id"])
+    render @game
   end
 end
