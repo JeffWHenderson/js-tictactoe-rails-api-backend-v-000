@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   def index
-
+    render root
   end
 
   def show
